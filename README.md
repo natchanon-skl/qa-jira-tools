@@ -19,8 +19,14 @@ Claude skill สำหรับงาน QA กับ Jira (อ่านอย�
 ## ความปลอดภัย
 skill นี้ **อ่านได้อย่างเดียว** ไม่สร้าง แก้ไข เปลี่ยน status หรือ comment ใน Jira/Confluence
 
+## หน้าเว็บ (QA Card Explainer)
+`web/qa-card-explainer.html` คือหน้าเว็บที่ทำจากกฎของ skill นี้ มี 3 แท็บ: อธิบายการ์ด, Discord, สร้างการ์ด
+ใช้งานได้เฉพาะเมื่อเผยแพร่เป็น Artifact บน claude.ai (ต้องใช้ connector Atlassian Rovo และการเรียก Claude จากหน้าเว็บ) เปิดไฟล์ตรง ๆ ในเบราว์เซอร์แล้วปุ่มจะใช้ไม่ได้
+
 ## โครงสร้าง
 ```
 qa-requirement-understanding/
 └── SKILL.md
+web/
+└── qa-card-explainer.html
 ```
